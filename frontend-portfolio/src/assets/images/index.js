@@ -1,1 +1,10 @@
 export { default as Logo } from "./sahar.png";
+export { default as profile } from "./profile.png";
+export { default as circle } from "./circle.svg";
+export { default as flutter } from "./flutter.png";
+export { default as sass } from "./sass.png";
+export { default as redux } from "./redux.png";
+export { default as html } from "./html.png";
+export { default as javascript } from "./javascript.png";
+export { default as css } from "./css.png";
+export { default as react } from "./react.png";
