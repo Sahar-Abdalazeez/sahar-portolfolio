@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './About.scss';
 import { motion } from 'framer-motion'
 import { urlFor, client } from '../../client';
-import { AppWrap } from '../../wrapper';
+import { AppWrap, MotionWrap } from '../../wrapper';
 
 function About() {
     const [abouts, setAbouts] = useState([]);
@@ -12,7 +12,6 @@ function About() {
         client.fetch(query).then((data) => setAbouts(data))
     }, [])
 
-    console.log('abouts', abouts)
     return (
         <>
             <h2 className='head-text' > I Know that <span>Good Apps</span><br />means <span>Good Business</span> </h2>
@@ -38,4 +37,6 @@ function About() {
     )
 }
 
-export default AppWrap(About, 'about')
+export default AppWrap(
+    MotionWrap(About, 'app__about'),
+    'about', "app__whitebg")
