@@ -1,12 +1,10 @@
-import React, { useState } from "react";
-import { HiMenuAlt4, HiX } from "react-icons/hi";
-import { motion } from "framer-motion";
+import React, { useState } from 'react';
+import { HiMenuAlt4, HiX } from 'react-icons/hi';
+import { motion } from 'framer-motion';
 
-import { images } from "../../assets";
-import "./Navbar.scss";
-
-const navs = ["Home", "About", "Contact", "Work", "Skills"];
-
+import { images } from '../../assets';
+import './Navbar.scss';
+const navs = ['home', 'about', 'work', 'skills', 'contact'];
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
 
@@ -30,11 +28,11 @@ const Navbar = () => {
                 {toggle && (
                     <motion.div
                         whileInView={{ x: [300, 0] }}
-                        transition={{ duration: 0.85, ease: "easeOut" }}
+                        transition={{ duration: 0.85, ease: 'easeOut' }}
                     >
                         <HiX onClick={() => setToggle(false)} />
                         <ul>
-                            {["home", "about", "work", "skills", "contact"].map((item) => (
+                            {navs.map((item) => (
                                 <li key={item}>
                                     <a href={`#${item}`} onClick={() => setToggle(false)}>
                                         {item}

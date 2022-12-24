@@ -43,7 +43,7 @@ const Work = () => {
             </h2>
 
             <div className="app__work-filter">
-                {["UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
+                {["Mobile App", "React JS", "All"].map(
                     (item, index) => (
                         <div
                             key={index}
@@ -62,11 +62,10 @@ const Work = () => {
                 transition={{ duration: 0.5, delayChildren: 0.5 }}
                 className="app__work-portfolio"
             >
-                {filterWork.map((work, index) => (
+                {filterWork?.map((work, index) => (
                     <div className="app__work-item app__flex" key={index}>
                         <div className="app__work-img app__flex">
                             <img src={urlFor(work.imgUrl)} alt={work.name} />
-
                             <motion.div
                                 whileHover={{ opacity: [0, 1] }}
                                 transition={{
@@ -100,8 +99,8 @@ const Work = () => {
                         </div>
 
                         <div className="app__work-content app__flex">
-                            <h4 className="bold-text">{work.title}</h4>
-                            <p className="p-text" style={{ marginTop: 10 }}>
+                            <h4 style={{ height: 30 }} className="bold-text">{work.title}</h4>
+                            <p className="p-text" style={{ marginTop: 5, height: 80 }}>
                                 {work.description}
                             </p>
 
@@ -115,4 +114,7 @@ const Work = () => {
         </>
     );
 };
-export default AppWrap(Work, "work");
+
+export default AppWrap(
+    MotionWrap(Work, 'app__works'),
+    'work', "app__primarybg")
