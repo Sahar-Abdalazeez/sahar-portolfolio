@@ -8440,6 +8440,11 @@ react-scripts@5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
+react-semantic-popup@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-semantic-popup/-/react-semantic-popup-1.0.5.tgz#4446aa8dcbd64928cc71467ec36b775d23b053f0"
+  integrity sha512-a+6ccKc8I48ynWI5QOys04c4KZcfguDUu1d4lwyIj3Y8dCN++kX+WHMSQxiFuNO/XP37gokseET31PrH7JscOQ==
+
 react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
