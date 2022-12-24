@@ -1,4 +1,4 @@
-export { default as Logo } from "./sahar.png";
+export { default as sahar } from "./sahar.png";
 export { default as profile } from "./profile.png";
 export { default as circle } from "./circle.svg";
 export { default as flutter } from "./flutter.png";
@@ -11,4 +11,6 @@ export { default as react } from "./react.png";
 export { default as about01 } from "./about01.png";
 export { default as about02 } from "./about02.png";
 export { default as about03 } from "./about03.png";
-export { default as about04 } from "./about04.png";
+export { default as email } from "./email.png";
+export { default as mobile } from "./mobile.png";
+export { default as saharProfile } from "./saharProfile.png";
