@@ -1,19 +1,19 @@
 import React from 'react'
-import { BsTwitter, BsInstagram } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 function SocialMedia() {
     return (
         <div className="app__social" >
-            <div>
-                <BsTwitter />
-            </div>
-            <div>
+            <a href={'https://github.com/Sahar-Abdalazeez'} >
+                <AiFillGithub />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100007349014111&mibextid=ZbWKwL">
                 <FaFacebookF />
-            </div>
-            <div>
-                <BsInstagram />
-            </div>
+            </a>
+            <a href="https://www.linkedin.com/in/sahar-abdalaziz-3912521aa">
+                <AiFillLinkedin />
+            </a>
         </div>
     )
 }
